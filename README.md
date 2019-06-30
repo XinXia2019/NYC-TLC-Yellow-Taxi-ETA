@@ -2,13 +2,15 @@
 
 This project aims to apply machine learning models to predict taxi trip duration in New York City using TLC yellow trips data in 2016 from Big Query.
 
-## The features we used:
+## The major features we used:
 
-`distance_in_km`: Continuous variable. Haversine distance measures the shortest path distance between two points on the sphere. 
+`distance_in_km`: Haversine distance measures the shortest path distance between two points on the sphere. 
 
-`avg_travel_time`: Continuous variable. The average **historical** travel time in terms of the same *pickup area* and *drop-off area*, with geohash precision = 6. For example, if someone is traveling from abcdef (geohash code) to abcdeg (geohash code) at 15:00 on May 15th. The `avg_travel_time` will calculate the average travel time for trips that traveled from abcdef to abcdeg before May 15th 15:00. 
+`avg_travel_time`: The average **historical** travel time in terms of the same *pickup area* and *drop-off area*, with geohash precision = 6. For example, if someone is traveling from abcdef (geohash code) to abcdeg (geohash code) at 15:00 on May 15th. The `avg_travel_time` will calculate the average travel time for trips that traveled from abcdef to abcdeg before May 15th 15:00. 
 
-`avg_trip_dist`: Continuous variable. The average **historical** trip distance in terms of the same *pickup area* and *drop-off area*, with geohash precision = 6. For example, if someone is traveling from abcdef (geohash code) to abcdeg (geohash code) at 15:00 on May 15th. The `avg_trip_dist` will calculate the average trip distance for trips that traveled from abcdef to abcdeg before May 15th 15:00. 
+`avg_trip_dist`: The average **historical** trip distance in terms of the same *pickup area* and *drop-off area*, with geohash precision = 6. For example, if someone is traveling from abcdef (geohash code) to abcdeg (geohash code) at 15:00 on May 15th. The `avg_trip_dist` will calculate the average trip distance for trips that traveled from abcdef to abcdeg before May 15th 15:00. 
+
+`kmeans`: Clustering similar trips based on pickup and drop-off location.
 
 `visib`: Countinuous variable. The mean visibility for the day in miles.
 
