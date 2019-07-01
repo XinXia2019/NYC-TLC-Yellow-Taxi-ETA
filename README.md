@@ -1,4 +1,4 @@
-## NYC Taxi ETA
+## NYC TLC Yellow Taxi ETA
 
 This project aims to apply machine learning models to predict taxi trip duration in New York City using TLC yellow taxi trips data in 2016 from Big Query.
 
